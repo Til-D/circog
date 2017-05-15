@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".ConsentActivity">
+
+    <LinearLayout
+        android:id="@+id/buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5sp"
+        android:weightSum="2"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/con_btn_quit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:onClick="onDenyConsent"
+            android:padding="5dip"
+            android:text="@string/con_btn_not_now"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/con_btn_give_consent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:onClick="onGiveConsent"
+            android:padding="5dip"
+            android:text="@string/con_btn_give_consent"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/buttons">
+
+        <LinearLayout
+            style="@style/width_match_parent_max_400"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5sp"
+            android:layout_gravity="top|center">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="5sp"
+                android:text="@string/con_title"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:padding="5sp"
+                android:text="@string/con_intro" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5sp"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="80sp"
+                    android:orientation="horizontal"
+                    android:weightSum="2" >
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="80sp"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/con_portrait"
+                        android:paddingTop="5sp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/tilman" />
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="80sp"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/con_portrait"
+                        android:paddingTop="5sp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/tonja" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5sp"
+                android:padding="5sp"
+                android:text="@string/con_contact" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5sp"
+                android:padding="5sp"
+                android:text="@string/con_data" />
+            <!-- Who we are -->
+
+
+
+            <!--<TextView-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:autoLink="email"-->
+                <!--android:padding="5sp"-->
+                <!--android:text="@string/con_contact" />-->
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

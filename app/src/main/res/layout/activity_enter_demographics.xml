@@ -1,0 +1,192 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".EnterDemographicsActivity">
+
+    <!-- OVERALL progress -->
+
+    <LinearLayout
+        style="@style/width_match_parent_max_400"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5sp"
+        android:layout_gravity="top|center">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="5sp"
+            android:text="@string/demographics_title"
+            android:textSize="16sp" />
+
+        <!-- Age -->
+
+        <LinearLayout
+            android:id="@+id/em_age_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="5sp"
+            android:background="@drawable/linear_layout_background"
+            android:orientation="vertical"
+            android:padding="5sp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/demographics_age"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/em_age"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/demographics_age_hint"
+                android:inputType="number" />
+        </LinearLayout>
+
+        <!-- Gender -->
+
+        <LinearLayout
+            android:id="@+id/em_gender_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="5sp"
+            android:background="@drawable/linear_layout_background"
+            android:orientation="vertical"
+            android:padding="5sp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/demographics_gender"
+                android:textSize="12sp" />
+
+            <Spinner
+                android:id="@+id/em_gender"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="5sp"
+            android:background="@drawable/linear_layout_background"
+            android:orientation="vertical"
+            android:padding="5sp" >
+
+            <!-- Email -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/demographics_profession_explanation"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="6sp"
+                android:text=""
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/em_user_demographics"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/demographics_profession_hint"
+                android:inputType="textEmailAddress" >
+
+                <!-- <requestFocus /> -->
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="5sp"
+            android:background="@drawable/linear_layout_background"
+            android:orientation="vertical"
+            android:padding="5sp" >
+
+            <!-- Email -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/demographics_email_explanation"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="6sp"
+                android:text="@string/demographics_email"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/em_user_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/demographics_email_hint"
+                android:inputType="textEmailAddress" >
+
+                <!-- <requestFocus /> -->
+            </EditText>
+        </LinearLayout>
+
+        <!--<Button-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:layout_marginTop="5sp"-->
+            <!--android:onClick="onDonePressed"-->
+            <!--android:padding="5sp"-->
+            <!--android:text="@string/ok"-->
+            <!--android:textSize="12sp" />-->
+
+        <LinearLayout
+            android:id="@+id/buttons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5sp"
+            android:weightSum="2"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/con_btn_quit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:onClick="onNotNowPressed"
+                android:padding="5dip"
+                android:text="@string/con_btn_not_now"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/con_btn_give_consent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:onClick="onDonePressed"
+                android:padding="5dip"
+                android:text="@string/save"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

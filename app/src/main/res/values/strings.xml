@@ -1,0 +1,123 @@
+<resources>
+    <string name="app_name">Circog</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="wait">Please wait</string>
+    <string name="success">Success!</string>
+    <string name="error">Error!</string>
+    <string name="ok">OK</string>
+    <string name="save">save</string>
+    <string name="gender_female">female</string>
+    <string name="gender_male">male</string>
+
+    <!-- MAIN ACTIVITY -->
+    <string name="main_title">Select a task to test your alertness and vigilance.</string>
+    <string name="main_launch_pvt">Psychomotor Vigilance Test</string>
+    <string name="main_launch_gonogo">Go/No-Go Task</string>
+    <string name="main_launch_mot">Multiple Object Tracking</string>
+    <string name="title_activity_pvt">PVTActivity</string>
+    <string name="task_dialog_finish">Excellent! You made it through all tasks!</string>
+    <string name="task_toast_finish">Thanks! That\'s it!</string>
+    <string name="task_dialog_error">Ooops! An error has occurred.</string>
+    <string name="task_dialog_next_task">Congratulations! You made it! Only one task left.</string>
+    <string name="task_dialog_next_tasks">Congratulations! You made it! %1$d tasks left.</string>
+    <string name="study_completed">Congratulations! You have officially completed the minimum amount of days required for this study. However, you can keep using the app. Thanks!</string>
+
+    <!--PVT ACTIVITY-->
+    <string name="pvt_explanation">Tap the screen as soon as a number appears. Numbers will appear at random times. The test lasts about 2 minutes.</string>
+    <string name="pvt_btn_start">Start</string>
+    <string name="pvt_btn_stop">Stop</string>
+    <string name="pvt_default_txt">Press Start.</string>
+    <string name="pvt_dialog_finish">Congratulations! You made it through %1$d tasks! Your average reaction time was %2$s ms.</string>
+    <string name="pvt_dialog_finish_single">Congratulations! You made it through %1$d task! Your average reaction time was %2$s ms.</string>
+    <string name="pvt_dialog_ok">Ok</string>
+    <string name="pvt_premature_tap">Nope! Be patient.</string>
+
+    <!--GoNoGo ACTIVITY-->
+    <string name="gng_explanation">CLICK on the PLAIN green dot when it appears. IGNORE the PATTERNED green dot! It will disappear by itself.</string>
+    <string name="gng_btn_start">Start</string>
+    <string name="gng_btn_stop">Stop</string>
+    <string name="gng_dialog_finish">Congratulations! You made it through %1$d tasks! You got %2$d out of %3$d correct. Your average reaction time was %4$s ms.</string>
+    <string name="gng_dialog_finish_single">Congratulations! You made it through %1$d task! You got %2$d out of %3$d correct. Your average reaction time was %4$s ms.</string>
+    <string name="gng_dialog_ok">Ok</string>
+    <string name="GNG_false_alarm">Oops! Only click on PLAIN dots!</string>
+
+    <!--MOT ACTIVITY-->
+    <string name="mot_explanation">There are %1$d green circles. Visually follow their trajectory once they start moving and try to locate them again once they stop.</string>
+    <string name="mot_next_task">Yay! %1$d rounds left. You know what to do. Ready?</string>
+    <string name="mot_last_task">Almost there! %1$d round left. Ready? Go!</string>
+    <string name="mot_btn_start">Start</string>
+    <string name="mot_btn_stop">Stop</string>
+    <string name="mot_dialog_finish">Congratulations! You made it through %1$d tasks! You got %2$d out of %3$d targets correct.</string>
+
+    <!--NOTIFICATIONS-->
+    <!--<string name="notif_title">Time for a quick task!</string>-->
+    <string name="notification_service_name">Circog Notification Scheduler</string>
+    <string name="notif_title">Time for some attention tasks!</string>
+    <string name="notif_content">Click to assess your current concentration levels.</string>
+
+    <!-- Daily Survey -->
+    <string name="title_activity_survey">Survey</string>
+    <string name="daily_survey_title">Quick daily sleep assessment!</string>
+    <string name="daily_survey_statement_1">What time did you wake up this morning?</string>
+    <string name="daily_survey_pick_time">Pick a time</string>
+    <string name="daily_survey_statement_2">How many hours did you sleep last night?</string>
+    <string name="daily_survey_sleep_quality">How would you rate today\'s sleep quality?</string>
+    <string name="daily_survey_poor">Very poor</string>
+    <string name="daily_survey_very_good">Very good</string>
+    <string name="daily_survey_error_sleep_quality">Oops! Please indicate how well you slept.</string>
+    <string name="daily_survey_error_wakeup_time">Oops! Please set a wake-up time.</string>
+    <string name="daily_survey_error_hours_slept">Oops! Please indicate your hours slept.</string>
+
+    <!--Task survey-->
+    <string name="daily_task_survey_title">Just before you start...</string>
+    <string name="task_survey_sleepiness">How alert are you feeling right now?</string>
+    <string name="task_survey_sleepy">super sleepy</string>
+    <string name="task_survey_alert">super alert</string>
+    <string name="task_survey_error_alert">Oops! Please specify your level of alertness.</string>
+    <string name="task_survey_caffeination">I had a caffeinated drink within the last hour.</string>
+
+    <string name="survey_strongly_disagree">Strongly disagree</string>
+    <string name="survey_strongly_agree">Strongly agree</string>
+    <string name="survey_send">Submit</string>
+    <string name="survey_scale_1">1</string>
+    <string name="survey_scale_2">2</string>
+    <string name="survey_scale_3">3</string>
+    <string name="survey_scale_4">4</string>
+    <string name="survey_scale_5">5</string>
+    <string name="survey_error_title">Error</string>
+    <string name="survey_error_ok">OK</string>
+    <string name="survey_error_message_1">Please rate the first statement.</string>
+    <string name="survey_error_message_2">Please rate the second statement.</string>
+    <string name="survey_error_message_3">Please rate the third statement.</string>
+    <string name="survey_thanks">Thanks!</string>
+
+    <!-- Consent Form-->
+    <string name="con_title">Consent to Participate</string>
+    <string name="con_intro">Welcome to Circog! This app is part of a scientific study, which focuses on detecting users\' circadian rhythms, i.e. performance variations throughout the day. From time to time, Circog will prompt you to perform a sequence of concentration tasks. If you do not receive a notification within 24hours after installation, please let us know.</string>
+    <string name="con_portrait">Portrait of the researchers that organise the study: Tilman Dingler and Tonja Maschulla</string>
+    <string name="con_contact">"This study is conducted by Tilman Dingler and Tonja Maschulla at the University of Stuttgart. In case you have questions, please contact us at userstudies@hcilab.org."</string>
+    <string name="con_data">"By pressing accept, you allow Circog to anonymously collect app usage data. All data will be securely stored on a server in compliance with European data protection laws (BGBl. I S. 2325). No phone content or sensor data will be collected. Logs will only be uploaded when you are connected to WiFi to prevent any upload cost. Your data will only be used in the context of our research and will never be shared with third parties. You can withdraw from the study at any moment by simply uninstalling the app. Thanks! And have fun with the tasks!</string>
+    <string name="con_btn_give_consent">Accept</string>
+    <string name="con_btn_not_now">Not Now</string>
+    <string name="con_could_not_register">No connection to our servers - are you connected to the Internet?</string>
+
+    <!-- Demographics -->
+    <string name="demographics_title">Demographics</string>
+    <string name="demographics_age">Age</string>
+    <string name="demographics_age_hint">-</string>
+    <string name="demographics_gender">Gender</string>
+    <string name="demographics_email_explanation">Optionally, you can enter your email if you are interested in learning about your circadian rhythm. In case we are able to detect your rhythm, we are happy to send you your results.</string>
+    <string name="demographics_email">Your Email:</string>
+    <string name="demographics_email_hint">-</string>
+    <string name="demographics_error_message_age">Please enter your age.</string>
+    <string name="demographics_error_message_gender">Please select your gender.</string>
+
+    <string name="demographics_profession_explanation">Your profession:</string>
+    <string name="demographics_profession_hint"></string>
+    <string name="demographics_error_message_profession">Please indicate your profession.</string>
+
+    <!--SensorManager-->
+    <string name="sensor_service_name">Circog Sensor Manager Service</string>
+
+</resources>

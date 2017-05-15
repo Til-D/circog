@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:fitsSystemWindows="true"-->
+    <!--tools:context="org.hcilab.circog.MainActivity">-->
+
+    <!--<android.support.design.widget.AppBarLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:theme="@style/AppTheme.AppBarOverlay">-->
+
+        <!--<android.support.v7.widget.Toolbar-->
+            <!--android:id="@+id/toolbar"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="?attr/actionBarSize"-->
+            <!--android:background="?attr/colorPrimary"-->
+            <!--app:popupTheme="@style/AppTheme.PopupOverlay" />-->
+
+    <!--</android.support.design.widget.AppBarLayout>-->
+
+    <!--<include layout="@layout/content_main" />-->
+
+    <!--<android.support.design.widget.FloatingActionButton-->
+        <!--android:id="@+id/fab"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="bottom|end"-->
+        <!--android:layout_margin="@dimen/fab_margin"-->
+        <!--android:src="@android:drawable/ic_dialog_email" />-->
+<!--</android.support.design.widget.CoordinatorLayout>-->
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".MainActivity">
+
+<LinearLayout
+    style="@style/width_match_parent_max_400"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5sp"
+    android:layout_gravity="top|center">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="5sp"
+        android:text="@string/main_title"
+        android:textSize="16sp" />
+
+    <!--<ImageView-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="160sp"-->
+        <!--android:layout_marginTop="5sp"-->
+        <!--android:layout_weight="1"-->
+        <!--android:background="@drawable/linear_layout_background"-->
+        <!--android:contentDescription="@string/nl_alt"-->
+        <!--android:padding="5sp"-->
+        <!--android:scaleType="fitCenter"-->
+        <!--android:src="@drawable/location" />-->
+
+    <!--<TextView-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="5sp"-->
+        <!--android:background="@drawable/linear_layout_background"-->
+        <!--android:padding="5sp"-->
+        <!--android:text="@string/nl_explanation" />-->
+
+    <Button
+        android:id="@+id/btn_launch_pvt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5sp"
+        android:onClick="launchPVT"
+        android:padding="5sp"
+        android:text="@string/main_launch_pvt"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/btn_launch_gonogo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5sp"
+        android:onClick="launchGoNoGo"
+        android:padding="5sp"
+        android:text="@string/main_launch_gonogo"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/btn_launch_mot"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5sp"
+        android:onClick="launchMOT"
+        android:padding="5sp"
+        android:text="@string/main_launch_mot"
+        android:textSize="12sp" />
+
+</LinearLayout>
+
+</ScrollView>
